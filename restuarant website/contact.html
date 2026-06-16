@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website | Contact</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loaderCircle"></div>
+    </div>
+
+    <!-- Back To Top Button -->
+    <button id="topButton" class="topButton">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="logoArea">
+                <i class="fa-solid fa-utensils"></i>
+                <h2 class="brandName">RoyalTaste</h2>
+            </div>
+
+            <ul class="navLinks" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="activeLink">Contact</a></li>
+            </ul>
+
+            <div class="navActions">
+
+                <!-- Dark Mode Toggle -->
+                <button id="themeToggle" class="themeToggle">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- Mobile Menu -->
+                <button id="menuButton" class="menuButton">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Page Header -->
+        <section class="pageBanner animateItem">
+
+            <div class="sectionTitle">
+
+                <h1>Contact Us</h1>
+
+                <p>
+                    We would love to hear from you. Send us a message or visit our restaurant.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contactSection animateItem">
+
+            <div class="contactGrid">
+
+                <!-- Contact Form -->
+                <div class="contactFormBox">
+
+                    <h2>Send A Message</h2>
+
+                    <form id="contactForm" novalidate>
+
+                        <div class="inputGroup">
+
+                            <label for="name">Name</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name">
+
+                            <small class="errorText" id="nameError"></small>
+
+                        </div>
+
+                        <div class="inputGroup">
+
+                            <label for="email">Email</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email">
+
+                            <small class="errorText" id="emailError"></small>
+
+                        </div>
+
+                        <div class="inputGroup">
+
+                            <label for="subject">Subject</label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="Enter subject">
+
+                            <small class="errorText" id="subjectError"></small>
+
+                        </div>
+
+                        <div class="inputGroup">
+
+                            <label for="message">Message</label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Write your message"></textarea>
+
+                            <small class="errorText" id="messageError"></small>
+
+                        </div>
+
+                        <button type="submit" class="primaryButton">
+                            Send Message
+                        </button>
+
+                        <p id="successMessage" class="successMessage"></p>
+
+                    </form>
+
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contactInfoBox">
+
+                    <h2>Get In Touch</h2>
+
+                    <div class="infoItem">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+
+                            <h3>Address</h3>
+
+                            <p>
+                                Food Street, Qasimabad, Hyderabad
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="infoItem">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <div>
+
+                            <h3>Phone</h3>
+
+                            <p>
+                                +92 300 1234567
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="infoItem">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <div>
+
+                            <h3>Email</h3>
+
+                            <p>
+                                info@royaltaste.com
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="infoItem">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <div>
+
+                            <h3>Opening Hours</h3>
+
+                            <p>
+                                Monday - Sunday
+                            </p>
+
+                            <p>
+                                10:00 AM - 11:00 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Google Map -->
+        <section class="mapSection animateItem">
+
+            <div class="sectionTitle">
+
+                <h2>Find Us</h2>
+
+                <p>
+                    Visit our restaurant and enjoy an unforgettable dining experience.
+                </p>
+
+            </div>
+
+            <div class="mapContainer">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108784.65714183831!2d74.2382264!3d31.5203696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xb11f8f7c4fa56820!2sLahore!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footerContainer">
+
+            <div class="footerBox">
+
+                <h3>RoyalTaste</h3>
+
+                <p>
+                    Bringing families and friends together through unforgettable meals.
+                </p>
+
+            </div>
+
+            <div class="footerBox">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <div class="footerBox">
+
+                <h3>Contact</h3>
+
+                <p>Food Street,Qasimabad, Hyderabad</p>
+                <p>+92 300 1234567</p>
+                <p>info@royaltaste.com</p>
+
+            </div>
+
+            <div class="footerBox">
+
+                <h3>Follow Us</h3>
+
+                <div class="socialLinks">
+
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footerBottom">
+
+            <p>
+                 &copy; 2026 RoyalTaste | All Rights Reserved To Mr Ubaid Ullah.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Shared JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
